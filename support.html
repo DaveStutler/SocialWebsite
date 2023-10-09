@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>SFA</title> <!-- the content here will only show in the tab and in the metadata about the page -->
+  <!-- Sheltered For All: Orange County unhoused responders -->
+  <link rel="icon" href="./img/house-icon.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="support.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <!-- Navbar-->
+  <div class="navbar">
+    <ul>
+      <li><a href="./index.html">Who We Are</a></li>
+      <li><a href="./sfa.html">How We Help</a></li>
+      <li><a href="./support.html">Contact & Support</a></li>
+      <li><button id="theme-button">Light Switch</button></li>
+
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <div class="header-container">
+    <div id="header-img">
+      <img src="img/header3.jpg" alt="unhoused people" width="500" height="400">
+    </div>
+    <div class="header-menu">
+      <div class=header-item>
+        <h1>Your Help Can Transform Lives</h1>
+      </div>
+      <div class=header-item>
+        <h3>Join us in the fight to end homelessness by supporting local organizations, volunteering your time, or
+          donating to causes that provide shelter, food, and support to those in need. Every small effort counts towards
+          making a difference in someone's life. Let's work together to create a better future for our communities.</h3>
+      </div>
+      <div class="header-button">
+        <button type="button">Volunteer</button>
+        <button type="button">Donate</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="petition revealable" id="petition">
+    <h2>Be Kind to One Another ❤️ </h2>
+    <div class="petition-container">
+      <div class="petition-para">
+        <p>Sheltered For All provides immediate help/resources for people who experience unhoused. We urge you to take
+          action today to help provide a safe and secure shelter for those who are homeless in our community. With your
+          support, we can provide a warm bed, a hot meal, and the support and resources needed to help individuals get
+          back on their feet. Your donation, whether large or small, can make a significant impact in the lives of those
+          who are struggling to find a stable place to call home. Please consider making a donation, volunteering your
+          time, or spreading awareness about the issue of homelessness in our community. Together, we can make a
+          difference and ensure that everyone has a safe and stable place to call home.!</p>
+      </div>
+
+      <div class="signatures">
+        <p>🖊️ DJ from Brooklyn supports this.</p>
+        <p>🖊️ Amy from Queens supports this.</p>
+        <p>🖊️ Teresa from Harlem supports this.</p>
+        <p id="counter"> 🖊️ 3 people have signed this petition and support this cause. </p>
+      </div>
+
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <label for="name">Name </label>
+      <input type="text" id="name" name="name" placeholder="Dave Stutler">
+
+      <label for="hometown">Hometown </label>
+      <input type="text" id="hometown" name="hometown" placeholder="Brooklyn">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="davestutler@gmail.com">
+    </form>
+
+    <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content"> Thank you for your support 😊 </p>
+        <!-- button here (stretch feature) -->
+      </div>
+      <img id="thanks-img" src="img/popup.jpg" alt="unhoused people" width="500" height="400">
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-items">
+      <h1 id="footer-header">Sheltered For All</h1>
+      <p> SFA is a trademark an a service mark</p>
+      <div id="footer-links">
+        <a href="/">Privacy Policy</a>
+        <a href="/">Terms of use</a>
+      </div>
+    </div>
+  </div>
+  <script src="support.js"></script>
+</body>
+
+</html>

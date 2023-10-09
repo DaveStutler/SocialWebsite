@@ -1,0 +1,279 @@
+/* html {
+  height: 100vh;
+  width: 100vw;
+} */
+
+body {
+  background-color: #ffffff;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: darkslategray;
+  color: #ffffff;
+}
+
+/*navbar section */
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  margin: 0px;
+  width: 100%;
+  background-color: #d3d3d3;
+  z-index: 99;
+/*   padding: 20px; */
+
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+/*   text-align: center; */
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: #d3d3d3;
+  margin: 0px;
+/*   padding: 5px;
+  width: 100vw; */
+/*   border: 1px solid blueviolet; */
+  
+  display: flex; 
+/*   flex-direction: row; */
+/*   align-items: center; */
+/*   text-align: center; */
+} 
+
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
+} 
+
+#theme-button {
+  color: #666666;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 17px;
+}
+
+/* pseudo class for theme-button*/
+
+#theme-button:hover{
+  color:#341907;
+  cursor: pointer;
+}
+
+/* Pseudo-class links for navbar*/
+.navbar ul li a:link {
+  color: #341907
+}
+.navbar ul li a:visited {
+  color: #341907;
+}
+.navbar ul li a:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.navbar ul li a:active {
+  color: #000000;
+  cursor: pointer;
+}
+
+/* font size*/
+h2{
+  font-size: 40px;
+  text-align: center;
+  margin: 100px 0px 100px 0px;
+}
+
+/* header section */
+.header-container {
+  display: flex;
+  background-color: #396060;
+  padding: 200px 75px 180px 25px;
+  margin: 0px 0px 0px 0px;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 80px;
+}
+
+/*no rulesets for header-items yet*/
+.header-item:nth-of-type(1) {
+  font-size: 40px;
+  margin: 0%;
+  text-align: left;
+  color: white;
+} 
+.header-item:nth-of-type(2) {
+  width: 70%;
+  text-align: left;
+  padding: 0px;
+  color: white;
+}
+
+#header-img {
+  order: 3;
+  max-width: 50%;
+}
+
+#header-img img{
+  border-radius: 50%;  
+}
+
+.header-button {
+  width: 50%;
+}
+
+.header-button button{
+  padding: 12px;
+  background-color: #341907;
+  text-align: center;
+  font-size: 18px;
+  color: ghostwhite;
+  cursor: pointer;
+  border: 1px solid #341907;
+}
+
+/* petition */
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+  margin-left: 100px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+#sign-petition {
+  margin: 0px 20px 10px 100px;  
+}
+#sign-now-button {
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer section */
+.footer {
+  /* position: fixed; */
+  background-color: darkgrey;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer-header{
+  text-align: center;
+  margin: 0%;
+  padding: 50px 90px 5px 90px;
+}
+
+.footer-items p {
+  margin: 0%;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+
+#footer-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+  
+#footer-links a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#footer-links a:link {
+  color: black;
+}
+#footer-links a:visited {
+  color: black;
+}
+#footer-links a:hover {
+  color: black;
+  cursor: pointer;
+}
+#footer-links a:active {
+  color: black;
+}
+
+/* revealable  */
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
